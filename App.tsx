@@ -1,11 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NativeRouter, Route, Link } from "react-router-native";
+import ShareLocationComponent from './src/components/share-location/share-location.component';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <NativeRouter>
+      <View style={styles.container}>
+        <Text>Open up App.tsx to start working on your app!</Text>
+        <ShareLocationComponent />
+      </View>
+    </NativeRouter>
   );
 }
 
